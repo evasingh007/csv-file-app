@@ -21,7 +21,7 @@ function App() {
     formData.append('file', file);
 
     try {
-      const response = await fetch('/api/upload', {
+      const response = await fetch('https://csv-file-app-backend.onrender.com/api/upload', {
         method: 'POST',
         body: formData,
       });
